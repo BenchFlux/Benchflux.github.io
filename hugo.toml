@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://Benchflux.github.io/"
 languageCode = "en-us"
 title = "Benchflux Website"
 disableKinds = ["taxonomy", "term", "RSS", "sitemap"] # optional: keeps output minimal
