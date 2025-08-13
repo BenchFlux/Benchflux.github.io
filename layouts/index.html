@@ -1,0 +1,252 @@
+{{ define "main" }}
+<header class="header">
+  <nav class="navbar container">
+    <a href="{{ "/" | relURL }}">
+      <img src="{{ "benchflux.svg" | relURL }}" alt="BenchFlux Logo" width="120"/>
+    </a>
+    <div class="nav-links">
+      <!-- <a href="{{ "/people/" | relURL }}">People</a> -->
+      <a href="{{ "tutorials/" | relURL }}">Tutorials</a>
+      <!-- <a href="{{ "/code/" | relURL }}">Code</a> -->
+    </div>
+  </nav>
+</header>
+
+<div class="content-container">
+  <main class="hero">
+    <div class="hero-group">
+      <div class="hero-content">
+        <h1>
+          Advancing a Standard for
+          <span class="highlight"> Carbon Flux Data Across Scales</span>
+        </h1>
+        <p>
+          BenchFlux is a research initiative with the goal of creating a new machine learning benchmark
+          for carbon sequestration data.
+        </p>
+      </div>
+      <div class="hero-button">
+        <button class="learn-more" data-scroll-target="#about-section">About</button>
+      </div>
+    </div>
+  </main>
+</div>
+
+<div class="content-container">
+  <div class="image-container">
+    <img
+      src="{{ "globalmap.png" | relURL }}"
+      alt="Global Carbon Map"
+      style="opacity:90%; width:100%; height:auto; max-width:none;"
+    />
+  </div>
+</div>
+
+<div id="about-section" class="about-section">
+    <!-- <h2 style="padding-bottom: 5%; font-size: 40px;" class="about-heading">About</h2> -->
+  <div class="about-columns">
+    <div class="about-logos">
+        <a class="logo-item" href="https://www.boku.ac.at" target="_blank" rel="noopener">
+          <img src="{{ "Boku-logo.svg" | relURL }}" alt="Boku University" />
+        </a>
+        <a class="logo-item" href="https://www.wisc.edu" target="_blank" rel="noopener">
+          <img src="{{ "UW-logo.png" | relURL }}" alt="UW Madison" />
+        </a>
+        <a class="logo-item" href="https://www.atmofacts.com" target="_blank" rel="noopener">
+          <img src="{{ "atmofacts-full-logo.png" | relURL }}" alt="AtmoFacts" />
+        </a>
+        <a class="logo-item" href="https://www.uv.es" target="_blank" rel="noopener">
+          <img src="{{ "UDV-logo.svg" | relURL }}" alt="Universitat de València" />
+        </a>
+        <a class="logo-item" href="https://alive-abi.github.io/alive/index.html" target="_blank" rel="noopener">
+          <img src="{{ "alive-logo.png" | relURL }}" alt="Alive" />
+        </a>
+        <a class="logo-item" href="https://research.google/" target="_blank" rel="noopener">
+          <img src="{{ "google-logo.svg" | relURL }}" alt="Google" />
+        </a>
+        <a class="logo-item" href="https://www.bse.vt.edu/" target="_blank" rel="noopener">
+          <img src="{{ "vt_logo.png" | relURL }}" alt="Virginia Tech" />
+        </a>
+        <a class="logo-item" href="https://ourenvironment.berkeley.edu/" target="_blank" rel="noopener">
+          <img src="{{ "uc_berkely.png" | relURL }}" alt="UC Berkeley" />
+        </a>
+      </div>
+      
+
+    <div class="about-text">
+      <p>
+        <strong>BenchFlux</strong> is a consortium of research teams working on methods
+        to integrate atmospheric data and remote sensing data across scales.
+        Our goal is to improve on the current paradigm of scale-agnostic
+        carbon flux data by creating a new machine learning benchmark that
+        can consistently marry top-down remote sensing data with bottom-up
+        eddy covariance data. See our <strong>proposed work</strong>⤵
+      </p>
+    </div>
+  </div>
+</div>
+
+<section class="green-banner-section">
+  <div class="green-banner">
+    <div class="green-text">
+      <p>
+        Society faces the urgent challenge of developing sustainable, equitable, and scalable solutions to climate
+        change, driven by the critical need for evidence-based management of life support systems like carbon, water,
+        and heat.
+      </p>
+    </div>
+    <div class="green-image-container">
+      <img
+        src="{{ "satellite-photo.png" | relURL }}"
+        alt="BenchFlux Graphic"
+        class="green-banner-image"
+      />
+    </div>
+  </div>
+</section>
+
+<section class="green-banner-section-alt">
+  <div class="green-banner-wrapper">
+    <a href="{{ "tutorials/" | relURL }}" class="green-button-outside">Tutorials</a>
+          <div class="green-banner-alt">
+      <div class="green-image-container-alt">
+        <img
+          src="{{ "satellite-photo-2.jpg" | relURL }}"
+          alt="BenchFlux Graphic"
+          class="green-banner-image-alt"
+        />
+      </div>
+      <div class="green-text-alt">
+        <p>
+          To address this need, we are developing scale-aware benchmarks for measuring land carbon sequestration by
+          leveraging atmospheric carbon flux data alongside in-situ and remotely sensed earth observations.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="green-banner-section">
+  <div class="green-banner">
+    <div class="green-text">
+      <p>
+        We aim to provide code tutorials and datasets to the climate community to help scientists and developers add
+        scale awareness into their climate solutions.
+      </p>
+    </div>
+    <div class="green-image-container">
+      <img
+        src="{{ "fire-photo.jpg" | relURL }}"
+        alt="BenchFlux Graphic"
+        class="green-banner-image"
+        style="width:205%;"
+      />
+    </div>
+  </div>
+</section>
+
+<section class="people-container">
+  <h2><strong>BenchFlux Team</strong></h2>
+
+  <!-- If you want to keep people inline (simple): -->
+  <div class="people-grid">
+    <!-- Copy/paste/update cards as needed. Images should live under /static/people/... -->
+    <div class="person-card">
+      <div class="person-image-container">
+        <img src="{{ "people/paul.png" | relURL }}" alt="Paul Stoy" class="person-image" width="300" height="300"/>
+        <div class="person-hover-text">
+          <p>Paul is a Professor in the Department of Biological Systems Engineering in the College of Agricultural
+            and Life Sciences at the University of Wisconsin. He studies surface-atmosphere exchange (especially with
+            eddy covariance) and the role of land use, land management, and conservation in the climate system.</p>
+        </div>
+      </div>
+      <p class="person-name">Paul Stoy 🇺🇸</p>
+    </div>
+
+    <div class="person-card">
+      <div class="person-image-container">
+        <img src="{{ "people/alvaro.jpg" | relURL }}" alt="Álvaro Moreno-Martinez" class="person-image" width="300" height="300"/>
+        <div class="person-hover-text">
+          <p>Álvaro Moreno-Martinez
+
+            Álvaro Moreno is a senior researcher at the University of Valencia's Image & Signal Processing Group (ISP), specializing 
+            in remote sensing and machine learning for ecosystem monitoring at large scales. Dr. Moreno is a Google Developer Expert 
+            in Earth Engine and participates in NASA’s CEOS Land Product Validation subgroup, focusing on carbon fluxes estimations.</p>
+        </div>
+      </div>
+      <p class="person-name">Álvaro Moreno-Martinez 🇪🇸</p>
+    </div>
+
+    <div class="person-card">
+      <div class="person-image-container">
+        <img src="{{ "people/emma.png" | relURL }}" alt="Emma Izquierdo-Verdiguier" class="person-image" width="300" height="300"/>
+        <div class="person-hover-text">
+          <p>Emma Izquierdo-Verdiguier
+
+            Emma Izquierdo-Verdiguier is senior Scientist at Institute of Geomatics in the University of Natural Resources and Life 
+            Sciences (BOKU), Vienna. Her expertise is focused on using Machine Learning to analyze Earth Observation data. In 2012, 
+            her paper was ranked second in the student’s competition of the IEEE Geoscience and Remote Sensing Symposium (IGARSS). 
+            She is a Google Developer Expert in Earth Engine (from 2022) and a member of the ELLIS AI excellence network (since 2024).</p>
+        </div>
+      </div>
+      <p class="person-name">Emma Izquierdo-Verdiguier 🇦🇹</p>
+    </div>
+
+    <div class="person-card">
+      <div class="person-image-container">
+        <img src="{{ "people/sadehg.png" | relURL }}" alt="Sadegh Ranjbar" class="person-image" width="300" height="300"/>
+        <div class="person-hover-text">
+          <p>Sadegh Ranjbar is a research scientist at at the University of Wisconsin with experience in AI/ML, remote sensing, 
+            and geospatial analysis for environmental, agricultural, and urban systems. Skilled in large-scale data analysis, 
+            predictive modeling, and satellite data automation. Proficient in Python, cloud computing, and interdisciplinary research.</p>
+        </div>
+      </div>
+      <p class="person-name">Sadegh Ranjbar 🇺🇸</p>
+    </div>
+
+    <div class="person-card">
+      <div class="person-image-container">
+        <img src="{{ "people/sam.png" | relURL }}" alt="Samuel Bower" class="person-image" width="300" height="300"/>
+        <div class="person-hover-text">
+          <p>Sam works on project coordination, outreach, and tutorials for the BenchFlux project. He has a research 
+            background in geology and geography, and currently serves as the geospatial coordinator at AtmoFacts.</p>
+        </div>
+      </div>
+      <p class="person-name">Samuel Bower 🇺🇸</p>
+    </div>
+
+    <div class="person-card">
+      <div class="person-image-container">
+        <img src="{{ "people/maoya.png" | relURL }}" alt="Maoya Bassiouni" class="person-image" width="300" height="300"/>
+        <div class="person-hover-text">
+          <p>Maoya Bassiouni
+
+            Maoya Bassiouni is an ecohydrologist in the Department of Environmental Science, Policy and Management at UC 
+            Berkeley. Her research combine physical and eco-evolutionary theory with data science to understand how vegetation 
+            interacts with environmental change and how these interactions influence water, carbon, and energy cycles from soil, 
+            plant, to the biosphere.</p>
+        </div>
+      </div>
+      <p class="person-name">Maoya Bassiouni 🇺🇸</p>
+    </div>
+
+    <div class="person-card">
+      <div class="person-image-container">
+        <img src="{{ "people/yanghui.jpg" | relURL }}" alt="Yanghui Kang" class="person-image" width="300" height="300"/>
+        <div class="person-hover-text">
+          <p>Yanghui is an assistant professor in the Department of Biological Systems Engineering at Virginia Tech. Her 
+            research quantifies terrestrial ecosystem dynamics in response to environmental changes and management practices, 
+            using a combination of satellite remote sensing, machine learning, and process-based models.</p>
+        </div>
+      </div>
+      <p class="person-name">Yanghui Kang 🇺🇸</p>
+    </div>
+
+    <!-- Empty placeholders from your array can be added later as you get images/blurbs -->
+  </div>
+</section>
+
+<div class="footer">
+  <p>BenchFlux 2025</p>
+</div>
+{{ end }}

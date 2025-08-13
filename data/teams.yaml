@@ -1,0 +1,60 @@
+- key: alive
+  name: "ALIVE"
+  leads: "Paul Stoy · Sadegh Ranjbar"
+  summary: >
+    Low-latency, multi-scale flux estimation using geostationary remote sensing; builds
+    gap-free EO layers and compares multiple ML methods for continental-scale, hourly datasets
+    with uncertainties and sensitivities.
+  tutorial_url: "https://alive-abi.github.io/alive/code.html"
+  status: live
+
+- key: carbon-gem
+  name: "CARBON-GEM"
+  leads: "Álvaro Moreno-Martínez · Emma Izquierdo-Verdiguier"
+  summary: >
+    High-res, gap-free remote sensing (incl. OCO-2/3 SIF) and GEE-optimized pipelines; focuses
+    on explainable and uncertainty-aware ML to deliver global decameter datasets with
+    quantified uncertainty.
+  tutorial_url: ""
+  status: soon
+
+- key: carbonsense-ecoperceiver
+  name: "CarbonSense & EcoPerceiver"
+  leads: "Oliver Sonnentag · Christopher Pal · Matthew Fortier "
+  summary: >
+    Curates ML-ready FGT-EO data (incl. uncatalogued EC sites) with terrain/soil/meteorology
+    features; develops deep multimodal models and harmonized baselines with uncertainty.
+  tutorial_url: "https://github.com/BenchFlux/benchflux-datasets/tree/main/carbonsense"
+  status: live
+
+
+- key: eco2bench
+  name: "ECO2Bench"
+  leads: "Yanghui Kang  · Trevor Keenan"
+  summary: >
+    Integrates optical/thermal/microwave EO, climate/soil and TBM simulations; advances
+    spatiotemporal deep learning and knowledge-guided ML with UQ; delivers baselines, metrics
+    and NbCS evaluation toolboxes.
+  tutorial_url: ""
+  status: soon
+
+- key: spatialeddy
+  name: "SpatialEddy"
+  leads: "Ankur R. Desai · Stefan Metzger · Samuel Bower"
+  summary: >
+    Next-gen EC processing and flux spatialization for explicit space-time matching and nesting,
+    boosting information gain and enabling ownership-level comparisons with top-down inversions.
+  tutorial_url: "https://github.com/BenchFlux/benchflux-datasets/tree/main/SpatialEddy"
+  status: live
+
+
+- key: sustainedflux
+  name: "SustainedFlux"
+  leads: "Jingfeng Xiao"
+  summary: >
+    Long-running satellite + reanalysis upscaling program; applies multiple ML methods to
+    generate low-latency, global carbon flux estimates.
+  tutorial_url: ""
+  status: soon
+
+
