@@ -35,8 +35,8 @@
     Integrates optical/thermal/microwave EO, climate/soil and TBM simulations; advances
     spatiotemporal deep learning and knowledge-guided ML with UQ; delivers baselines, metrics
     and NbCS evaluation toolboxes.
-  tutorial_url: ""
-  status: soon
+  tutorial_url: "https://zenodo.org/records/8400968"
+  status: live
 
 - key: spatialeddy
   name: "SpatialEddy"
