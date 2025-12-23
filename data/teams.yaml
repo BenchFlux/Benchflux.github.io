@@ -30,13 +30,13 @@
 
 - key: eco2bench
   name: "ECO2Bench"
-  leads: "Yanghui Kang  · Trevor Keenan"
+  leads: "Yanghui Kang  · Trevor Keenan · Maoya Bassiouni"
   summary: >
     Integrates optical/thermal/microwave EO, climate/soil and TBM simulations; advances
     spatiotemporal deep learning and knowledge-guided ML with UQ; delivers baselines, metrics
     and NbCS evaluation toolboxes.
-  tutorial_url: "https://zenodo.org/records/8400968"
-  status: live
+  tutorial_url: ""
+  status: soon
 
 - key: spatialeddy
   name: "SpatialEddy"
